@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicios</title>
+    <link rel="stylesheet" href="css/j1.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <label class="icono-menu" onclick="mostrarMenu()"><i class="fas fa-bars"></i></label>
+    <nav id="menu-principal" >
+
+        <ul class="menu"> 
+            <li><a href="index.html"> Inicio</a></li>
+            <li><a href="j1.html"> ejercicio 1</a></li>
+            <li> <a href="j2.html"> ejercicio 2 </a></li>
+            <li> <a href="j3.html">ejercicio 3 </a></li>
+            <li> <a href="j4.html"> ejercicio 4 </a></li>
+        </ul>
+         </nav>
+         <div class=" main-content"> 
+             <h1>EJERCICIO 2</h1>
+              <fieldset>
+             <select class="cajas" id="numero" onchange="saludar()">
+                 <option value="1">1</option >
+                 <option value="2">2</option > 
+                 <option value="3">3</option >
+                 <option value="4">4</option >
+                 <option value="5">5</option >
+                 <option value="6">6</option >
+                 <option value="7">7</option >
+                 <option value="8">8</option >
+                 <option value="9">9</option >
+                 <option value="10">10</option >
+             </select>
+            </fieldset>
+             <div id="resultado"></div>
+         </body>
+         
+         </html>
+         <script>
+             function saludar() {
+                 var numero = parseInt(document.getElementById("numero").value);
+                 var multiplicacion = "";
+                 for (var i = 1; i <= 100; i++) {
+                     multiplicacion += "<h2>" + i + " * " + numero + " = " + numero * i + "</h2>";
+                 }
+                 document.getElementById("resultado").innerHTML = multiplicacion;
+             }
+         </script>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicios</title>
+    <link rel="stylesheet" href="css/j1.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <label class="icono-menu" onclick="mostrarMenu()"><i class="fas fa-bars"></i></label>
+    <nav id="menu-principal" >
+
+        <ul class="menu"> 
+            <li><a href="index.html"> Inicio</a></li>
+            <li><a href="j1.html"> ejercicio 1</a></li>
+            <li> <a href="j2.html"> ejercicio 2 </a></li>
+            <li> <a href="j3.html">ejercicio 3 </a></li>
+            <li> <a href="j4.html"> ejercicio 4 </a></li>
+        </ul>
+         </nav>
+         <div class=" main-content"> 
+             <H1>EJERCICIO 3</H1>
+             <section>
+                <form action="#" method="POST">
+                    <input type="number" id="numero" placeholder="Ingrese un numero"> <br> <br>
+                    <button class="boton1" type="button" onclick="calcular();">CALCULAR</button><br>
+                    <div id="resultado"></div><br>
+                   <div id="resu"></div>
+                </form>
+
+            </section>
+        </body>
+        </html>
+       
+        <Script>
+            function calcular(){
+    var numero=document.getElementById('numero').value;
+     var par=0;
+     var impar=0;
+     for(var s=1; s <= parseInt(numero);s++){
+         if( s %2 == 0){
+             par += s;
+
+             document.getElementById('resultado').innerHTML= "<h2> la sumatoria de los numeros par ="+par+"</h2>";
+         }
+     
+       else {
+         impar += s;
+         document.getElementById('resu').innerHTML= "<h2> la sumatoria de los numeros impar ="+impar+"</h2>";
+
+     }
+      } 
+     }
+
+        
+            
+        </Script>

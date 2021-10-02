@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicios</title>
+    <link rel="stylesheet" href="css/j1.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <label class="icono-menu" onclick="mostrarMenu()"><i class="fas fa-bars"></i></label>
+    <nav id="menu-principal" >
+
+        <ul class="menu"> 
+            <li><a href="index.html"> Inicio</a></li>
+            <li><a href="j1.html"> ejercicio 1</a></li>
+            <li> <a href="j2.html"> ejercicio 2 </a></li>
+            <li> <a href="j3.html">ejercicio 3 </a></li>
+            <li> <a href="j4.html"> ejercicio 4 </a></li>
+        </ul>
+         </nav>
+         <div class=" main-content"> 
+             
+             <H1>EJERCICIO 1</H1><br><br>
+             <h2>MULTIPLOS DE 3</h2> 
+           
+             <div id="resu"></div>
+          
+            </form>
+        </section>
+        </body>
+        
+        
+        </html>
+        <script>
+           
+
+         var resultado=0
+         var s=0;
+         for(var s=0; s <= 100 ;s++){
+            if( s % 3 == 0){
+             resultado += s;
+             
+             document.write("<H2>"+ s + "</h2> <br>");
+
+            document.getElementById('resu').innerHTML= "<h2> la sumatoria de los numeros multiplos de 3 es ="+resultado+"</h2>";
+             
+             
+             
+         }  
+         }
+           
+       
+           
+           
+           
+        </script>
+    
+
+     
